@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нэвтрэх хуудас</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body id="loginbody">
+
+  <div id="login-section">
+    <h2>Нэвтрэх</h2>
+    
+    <form>
+      <label for="username">Нэвтрэх нэр:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Нууц үг:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Нэвтрэх</button>
+    </form>
+    <div id="toggle-btn">
+      Тань бүртгүүлээгүй байгаа юу? <a onclick="toggleForm('signup')">Бүртгүүлэх</a>
+    </div>
+  </div>
+
+  <div id="signup-section">
+    <h2>Бүртгүүлэх</h2>
+    
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="newPassword">Нууц үг:</label>
+      <input type="password" id="newPassword" name="newPassword" required>
+      <label for="confirmPassword">Нууц үг баталгаажуулах:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <label for="name">Нэр:</label>
+      <input type="text" id="name" name="name" required>
+      <div>
+        <label>Хүйс:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Эр</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Эм</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender" value="other" required>
+          <label for="other">Бусад</label>
+        </div>
+      </div>
+      <button type="submit">Бүртгүүлэх</button>
+    </form>
+    <div id="toggle-btn">
+      Бүртгэлтэй юу? <a onclick="toggleForm('login')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нэвтрэх</a>
+    </div>
+  </div>
+
+  <script src="myscript.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        window.location.href = 'more.html';
+      });
+    });
+  </script>
+
+</body>
+</html>

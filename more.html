@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өдрийн хийдийн блог</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1998/1998592.png" type="image/svg+xml">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top, #87CEEB, #ffffff);
+        }
+
+        header {
+            background-color: #4682B4;
+            color: #fff;
+            padding: 0.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 5px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            font-size: 0.6em;
+        }
+
+        h1 img {
+            height: 0.8em;
+            margin-right: 5px;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropbtn {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0;
+            font-size: 1em;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffffa9;
+            border: 2px solid #001F3F;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            white-space: nowrap;
+            right: 0;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        a.login-link {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #4682B4;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 40px);
+            white-space: nowrap;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        footer p {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/1933/1933691.png" alt="Icon">Өдрийн хийдийн блог</a></h1>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Огноо сонгох</button>
+                <div class="dropdown-content">
+                    <a href="#day-2023-01-01">2023 оны 1 сарын 1</a>
+                    <a href="#day-2023-01-02">2023 оны 1 сарын 2</a>
+                    <a href="#day-2023-01-03">2023 оны 1 сарын 3</a>
+                    <a href="#day-2023-01-04">2023 оны 1 сарын 4</a>
+                    <a href="#day-2023-01-05">2023 оны 1 сарын 5</a>
+                    <a href="#day-2023-01-06">2023 оны 1 сарын 6</a>
+                </div>
+            </div>
+            <a href="login.html" class="login-link">Нэвтрэх</a>
+        </nav>
+    </header>
+
+    <section id="day-2023-01-01">
+        <h2>2023 оны 1 сарын 1</h2>
+        <img src="img/1.jpg" alt="Өдрийн зургийн 1">
+        <p>Бүгдээрээ асуултыгаа хийгдсэн өдөр байна. Учир нь хуучингаар аз жаргалтай байсан... </p>
+    </section>
+
+    <section id="day-2023-01-02">
+        <h2>2023 оны 1 сарын 2</h2>
+        <img src="img/2.jpg" alt="Өдрийн зургийн 2">
+        <p>Энэ өдөр нь өөрийн бусад өдрийнх нь аль хэдийн таарах болсон зургийн томоо байсан... </p>
+    </section>
+
+    <section id="day-2023-01-03">
+        <h2>2023 оны 1 сарын 3</h2>
+        <img src="img/3.jpg" alt="Өдрийн зургийн 3">
+        <p>Энэ өдрийн үлгэрийг олон хүмүүстэй нь маш их харж, үзсэн... </p>
+    </section>
+
+    <section id="day-2023-01-04">
+        <h2>2023 оны 1 сарын 4</h2>
+        <img src="img/4.jpg" alt="Өдрийн зургийн 4">
+        <p>Энэ өдөр нь томоо бусад томоонд хүрэх маш олон үлгэрүүд байв. ...</p>
+    </section>
+
+    <section id="day-2023-01-05">
+        <h2>2023 оны 1 сарын 5</h2>
+        <img src="img/5.jpg" alt="Өдрийн зургийн 5">
+        <p>Өдөр нь шинэ байдлаар өнгөрж байгаа болно. ...</p>
+    </section>
+
+    <section id="day-2023-01-06">
+        <h2>2023 оны 1 сарын 6</h2>
+        <div class="video-container">
+            <video width="700" height="450" controls>
+                <source src="img\Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>Өдөр нь шинэ байдлаар өнгөрж байгаа болно. ...</p>
+    </section>
+
+    <footer>
+        <p>Өнөөдрийн огноо: <span id="today-date"></span></p>
+        <P>Холбоо барих: +976 8656 2888</P>
+        <P>Имэйл: ai21d022@mandakh.edu.mn</P>
+    </footer>
+
+    <script>
+        const todayDateElement = document.getElementById('today-date');
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        todayDateElement.textContent = today.toLocaleDateString('mn-MN', options);
+
+        const initialSection = document.getElementById('day-2023-01-01');
+        if (initialSection) {
+            initialSection.style.display = 'block';
+        }
+
+        const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = event.target.getAttribute('href').substring(1);
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

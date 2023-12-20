@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" id="indexhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өдөрт 1 зураг</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body id="indexbody">
+    <div class="image-container active" id="image1">
+        <img src="img/1.jpg" alt="Зураг 1">
+        <div class="image-title-container">
+            <div class="image-class">
+                <p id="image-title">Аз жаргал</p>
+                <p id="image-info">Зургийн 1 мэдээлэл</p>
+                <br>
+                <button id="readMoreBtn" onclick="redirectToLogin()">Дэлгэрэнгүй</button>
+            </div>
+        </div>
+        <div class="image-date">
+            <p>Огноо: 2023 оны 1 сар</p>
+        </div>
+    </div>
+    
+    <div class="image-container" id="image2">
+        <img src="img/2.jpg" alt="Зураг 2">
+        <div class="image-title-container">
+            <div class="image-class">
+                <p id="image-title">Хичээл</p>
+                <p id="image-info">Зургийн 2 мэдээлэл</p>
+                <br>
+                <button id="readMoreBtn" onclick="redirectToLogin()">Дэлгэрэнгүй</button>
+            </div>
+        </div>
+        <div class="image-date">
+            <p>Огноо: 2023 оны 2 сар</p>
+        </div>
+    </div>
+    
+    <div class="image-container" id="image3">
+        <img src="img/3.jpg" alt="Зураг 3">
+        <div class="image-title-container">
+            <div class="image-class">
+                <p id="image-title">Амралт</p>
+                <p id="image-info">Зургийн 3 мэдээлэл</p>
+                <br>
+                <button id="readMoreBtn" onclick="redirectToLogin()">Дэлгэрэнгүй</button>
+            </div>
+        </div>
+        <div class="image-date">
+            <p>Огноо: 2023 оны 3 сар</p>
+        </div>
+    </div>
+    
+    <div class="image-container" id="image4">
+        <img src="img/4.jpg" alt="Зураг 4">
+        <div class="image-title-container">
+            <div class="image-class">
+                <p id="image-title">Чөлөөт цаг</p>
+                <p id="image-info">Зургийн 4 мэдээлэл</p>
+                <br>
+                <button id="readMoreBtn" onclick="redirectToLogin()">Дэлгэрэнгүй</button>
+            </div>
+        </div>
+        <div class="image-date">
+            <p>Огноо: 2023 оны 4 сар</p>
+        </div>
+    </div>
+    
+    <div class="image-container" id="image5">
+        <img src="img/5.jpg" alt="Зураг 5">
+        <div class="image-title-container">
+            <div class="image-class">
+                <p id="image-title">Гарчиг: Ажил</p>
+                <p id="image-info">Зургийн 5 мэдээлэл</p>
+                <br>
+                <button id="readMoreBtn" onclick="redirectToLogin()">Дэлгэрэнгүй</button>
+            </div>
+        </div>
+        <div class="image-date">
+            <p>Огноо: 2023 оны 5 сар</p>
+        </div>
+    </div>
+    
+    <button id="prevBtn" onclick="changeImage(-1)"></button>
+    <button id="nextBtn" onclick="changeImage(1)"><span>Дараах</span></button>
+    
+    <div id="audio-controls">
+        <div id="playPauseBtn" onclick="togglePlayPause()" style="width: 20px; height: 20px;">
+            <img id="playPauseIcon" src="https://cdn-icons-png.flaticon.com/128/4340/4340106.png" alt="Тоглогч" style="width: 100%; height: 100%;">
+        </div>
+        <div id="volumeSliderContainer">
+            <div id="volumeSlider" onclick="adjustVolume(event)">
+                <div id="volumeSliderHandle"></div>
+            </div>
+        </div>
+        <button id="toggleVolumeSliderBtn" onclick="toggleVolumeSlider()" style="background: none; border: none;">
+            <img src="https://cdn-icons-png.flaticon.com/128/2995/2995101.png" alt="Хүснэгт өөрчлөх" style="width: 20px; height: 20px;">
+        </button>
+    </div>    
+
+    <script src="myscript.js"></script>
+
+</body>
+
+</html>
